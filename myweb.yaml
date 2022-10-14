@@ -23,7 +23,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: w491994/kube:<TAG>
+      - image: default-route-openshift-image-registry.apps.okd4-gpx-dc.kashier.io/pipeline-demo/example:<TAG>
         imagePullPolicy: Always
         name: myweb
 
