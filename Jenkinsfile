@@ -21,6 +21,7 @@ pipeline {
                              --context `pwd` \
                              --destination=image-registry.openshift-image-registry.svc:5000/pipeline-demo/example
 :${BUILD_NUMBER}
+                              --skip-tls-verify
             '''
           }
         }
