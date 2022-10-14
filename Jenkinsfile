@@ -19,7 +19,7 @@ pipeline {
             sh '''
             /kaniko/executor --dockerfile `pwd`/Dockerfile \
                              --context `pwd` \
-                             --destination=default-route-openshift-image-registry.apps.okd4-gpx-dc.kashier.io/pipeline-demo/example
+                             --destination=image-registry.openshift-image-registry.svc:5000/pipeline-demo/example
 :${BUILD_NUMBER}
             '''
           }
